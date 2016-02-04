@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# =========================
+# Adobe Brackets Files
+# =========================
+.brackets.json
