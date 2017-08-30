@@ -30,7 +30,7 @@ humpback.init();
 Keep your applications loading and running as fast as possible, by only initiating humpback when you actually need it at DOM ready, window load or directly the first time you you need to use humpback.
 
 
-##Applying filters
+## Applying filters
 Apply filters to one or more target elements, using the **filter** method:
 
 ```javascript
@@ -93,7 +93,7 @@ humpback automatically adds or deletes CSS vendor prefixes where needed. So, jus
 
 You can use humpback.vendorPrefix to return a string containing any CSS vendor prefix required by the current browser e.g. Google's Chrome will return '-webkit-'.
 
-##Validating filters
+## Validating filters
 
 Pass a string containing one or more CSS3 filters to humpback.validate() and it'll return a boolean value for the validity of your filter e.g.
 
