@@ -1,11 +1,11 @@
-#humpback
+# humpback
 Version 0.8.0
 
-##What is it?
+## What is it?
 humpback is a JavaScript library for applying and managing CSS3 filters.
 
 
-##Main features
+## Main features
 * Just 1.8Kb minified.
 * No dependancies.
 * Add, remove, group, normalize and validate filters.
@@ -15,7 +15,7 @@ humpback is a JavaScript library for applying and managing CSS3 filters.
 * Use single or multiple filters.
 
 
-##Getting started
+## Getting started
 Place the humpback directory in your preffered location and link to it from your document:
 
 ```html
@@ -55,7 +55,7 @@ When applying custom filter groups there's no need to supply the individual filt
 humpback.filter('ul > li', 'myGroup');
 ```
 
-##Removing filters
+## Removing filters
 
 Removing filters works in a similar manner as applying them. Call humpback.remove with elements you wish to remove filters from:
 
@@ -67,7 +67,7 @@ humpback.remove ('[Target element(s)]');
 humpback.remove('#mainContent > ul li.active');
 ```
 
-##Custom filter groups
+## Custom filter groups
 
 Create custom filter groups by passing a name for the group and a space seperated list of filters you want to assign to the group.
 
@@ -77,7 +77,7 @@ humpback.group('myGroup', 'grayscale(50%) blur(2px)');
 
 Group names may only contain the characters a-z, 0-9 and -.
 
-##Checking for support
+## Checking for support
 
 Check for CSS3 filter support in the current browser with the boolean humpback.supported:
 
@@ -87,7 +87,7 @@ if (humpback.supported) {
 }
 ```
 
-##Vendor prefixes
+## Vendor prefixes
 
 humpback automatically adds or deletes CSS vendor prefixes where needed. So, just use CSS compliant syntax and Humpack will take care of the prefixes.
 
@@ -101,7 +101,7 @@ Pass a string containing one or more CSS3 filters to humpback.validate() and it'
 humpback.validate('grayscale(50%) blur(2px)');
 ```
 
-##Normalizing filters
+## Normalizing filters
 You can normalize filters, removing excess white space and vendor prefixes by using humpback.normalize:
 
 ```javascript
@@ -110,13 +110,13 @@ humpback.normalize('grayscale(50%)  -webkit-blur(2px) ');
 
 will return the string 'grayscale(50%) blur(2px)'
 
-##Still todo
+## Still todo
 
 * Refactor.
 * Demo.
 * Tests.
 
 
-##Copyright and license
+## Copyright and license
 
 Copyright 2015 Toni Ruckwood. Licensed under the Apache License, Version 2.0.
